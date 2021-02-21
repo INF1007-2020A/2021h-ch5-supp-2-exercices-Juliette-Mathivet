@@ -4,7 +4,20 @@
 import math
 
 def get_num_letters(text):
-	return 0
+	characters = []
+	alphanum = []
+	for char in text:
+		characters.append(char)
+
+	for letters in characters:
+		if letters.isalnum() == True:
+			alphanum.append(1)
+		else:
+			continue
+	return (len(alphanum))
+
+
+
 
 def get_word_length_histogram(text):
 	return [0]
